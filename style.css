@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+
+img {
+  height: 200px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  margin: 32px 0;
+}
+
+p {
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+
+/**************** Header area ****************/
+
+header {
+  text-align: center;
+  background: url("background.jpg") no-repeat fixed center center/cover;
+}
+
+header .container {
+  padding: 48px;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin-top: 32px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a,
+.logo a {
+  text-decoration: none;
+  display: block;
+  color: rgb(255, 221, 0);
+  padding: 0 16px;
+}
+
+.logo a {
+  font-size: 40px;
+}
+
+/**************** Hero-Banner area ****************/
+
+#hero-banner {
+  min-height: 500px;
+}
+
+#hero-banner h2 {
+  font-size: 75px;
+  color: rgb(255, 221, 0);
+  text-align: center;
+  padding-top: 150px;
+}
+
+/**************** Main area ****************/
+
+#projects,
+#about,
+#skills {
+  padding: 50px;
+  min-height: 500px;
+}
+
+#projects .projects_boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects .box {
+  background-color: white;
+  width: 32%;
+  padding: 1rem;
+  border-radius: 2px;
+  border: rgb(255, 221, 0) 1px solid;
+}
+
+#projects .box h3 {
+  margin-bottom: 1rem;
+}
+
+#projects .box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+#about {
+  background: rgb(255, 213, 153);
+}
+
+#projects img,
+#skills img {
+  float: left;
+  margin-right: 32px;
+}
+
+#about img {
+  float: right;
+  margin-left: 32px;
+}
+
+i {
+  font-size: 3rem;
+}
+
+#skills .skills_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.skill:nth-child(odd) {
+  background-color: rgb(228, 228, 228);
+}
+
+.skill {
+  background-color: rgb(247, 247, 247);
+  padding: 2rem;
+  border: 1px solid rgb(222, 222, 222);
+}
+
+progress[value] {
+  height: 1.5rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: coral;
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.material-icons.md-48 {
+  font-size: 58px;
+  color: var(--primary-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
+
+/**************** Footer area ****************/
+
+footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+}
+
+/**************** Form ****************/
+
+footer form {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+footer form .form-group {
+  margin: 2rem 0;
+  display: flex;
+}
+
+footer form label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 100px;
+}
+
+footer button {
+  background-color: coral;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: inherit;
+}
